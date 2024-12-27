@@ -1,0 +1,153 @@
+/* STEP 1: Body styling */
+body {
+    background: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* STEP 2: Card container styling */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* STEP 3: Card styling */
+.card {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* STEP 4: Card top styling */
+.card-top {
+    background-image: url(images/illustration-hero.svg);
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 190px;
+}
+
+/* STEP 5: Card body styling */
+.card-body {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+/* STEP 6: Outer div styling */
+.outer-div {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(240, 100%, 99%);
+}
+
+/* STEP 7: Card section styling */
+.card-section {
+    display: flex;
+    align-items: center;
+}
+
+/* STEP 8: Typography and spacing */
+.card-section h5,
+.card-section p {
+    margin: 0px;
+}
+
+.h5-p-tag {
+    margin-left: 10px;
+}
+
+/* STEP 9: Card footer styling */
+.card-footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* STEP 10: Footer link styling */
+.card-footer a {
+    text-align: center;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    padding-top: 10px;
+}
+
+/* STEP 11: Footer button styling */
+.card-footer button {
+    cursor: pointer;
+    padding: 12px 0px;
+    border: none;
+    outline: none;
+    background: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* STEP 12: Change link styling */
+.change {
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+
+/* Responsive Design: Media Queries for Mobile (375px) and Desktop (1440px) */
+@media (max-width: 375px) {
+    .card {
+        width: 90%; /* Make the card width flexible on small screens */
+        margin: 20px; /* Add some margin for better spacing */
+    }
+
+    .card-body {
+        padding: 15px 20px; /* Reduce padding to fit smaller screens */
+    }
+
+    .outer-div {
+        padding: 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    .h5-p-tag {
+        margin-left: 0; /* Remove left margin for better alignment on smaller screens */
+        margin-top: 10px; /* Add some top margin to separate elements */
+    }
+
+    .card-footer {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .card-footer button {
+        padding: 10px 0px; /* Adjust button padding for smaller screens */
+    }
+
+    .card-footer a {
+        padding-top: 15px; /* Adjust padding for the cancel order link */
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        width: 400px; /* Slightly wider card for larger screens */
+        margin: 40px auto; /* Add margin for a centered look */
+    }
+
+    .card-body {
+        padding: 30px 50px; /* Increase padding for a more spacious look */
+    }
+
+    .outer-div {
+        padding: 20px; /* Increase padding to match larger screens */
+    }
+
+    .card-footer {
+        padding: 30px; /* Increase padding for more breathing room */
+    }
+
+    .card-footer button {
+        padding: 15px 0px; /* Increase button padding for larger screens */
+    }
+}
